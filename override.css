@@ -92,7 +92,7 @@ body {
  position: relative;
  background-color: #f5f5f5; 
 }
-.table-view-only{
+.desktop-card-view{
   display: none;
 }
 @media screen
@@ -180,5 +180,24 @@ and (-webkit-min-device-pixel-ratio: 1){
   background-repeat: no-repeat;
   background-position: right;
   background-size: 1.5rem;
+}
+.grid-desktop-card{
+ padding: 0.75rem;
+ margin: 5%;
+ background-color: white; 
+ position: relative;
+}
+.image-desktop-card{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.image-3desktop-card{
+  position: absolute;
+  top:1rem; 
+  right:1rem;
+  width: 1rem; 
 }
 }
