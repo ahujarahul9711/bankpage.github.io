@@ -1,7 +1,28 @@
+// var xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://reqres.in/api/products/3", true);
+// xhr.onload = function(){
+//     console.log(xhr.responseText);
+// };
+// xhr.send();
 window.addEventListener('resize', function () { 
     "use strict";
-    window.location.reload(); 
+    window.location.reload();
 });
+var expand = function(id)
+{
+	var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+	if(width < 1020){
+	var cla = document.getElementById(id).classList
+	if(cla.contains('slds-is-open'))
+	{
+			cla.remove('slds-is-open')
+	}
+	else
+	{
+			cla.add('slds-is-open')
+	}
+}
+}
 var showSideBar = function ()
 {
 	document.getElementById('sidebarid').style.display="inline";
