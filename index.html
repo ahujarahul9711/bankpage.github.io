@@ -67,65 +67,76 @@
 								<td><div class="slds-text-align_center sidebar-text">Application</div></td>
 							</tr>
 						</table>
-						<ul class="slds-accordion">
-							<li class="slds-accordion__list-item">
-								<section class="slds-accordion__section" id="acc1" onclick="expand('acc1')">
-									<div class="slds-accordion__summary">
-												<span class="sidebar-text sidebar-text-subheading slds-m-top_small">SUMMARY</span>
-												<span class="mobile-only slds-avatar slds-avatar_circle slds-avatar_x-small slds-p-around_xx-small slds-m-top_small">
-													<img alt="Down arrow" src="Images\right-arrow.svg"/>
-												</span>
-									</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">Account Summary</div>
-								</section>
-							</li>
-							<li class="slds-accordion__list-item">
-								<section class="slds-accordion__section desk" id="acc2" onclick="expand('acc2')">
-									<div class="slds-accordion__summary">
-												<span class="sidebar-text sidebar-text-subheading slds-m-top_small">INVESTMENTS</span>
-												<span class="mobile-only slds-avatar slds-avatar_circle slds-avatar_x-small slds-p-around_xx-small slds-m-top_small">
-													<img alt="Down arrow" src="Images\right-arrow.svg" />
-												</span>
-									</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">My Investments</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">Investor List</div>
-								</section>
-							</li>
-							<li class="slds-accordion__list-item">
-								<section class="slds-accordion__section" id="acc3" onclick="expand('acc3')">
-									<div class="slds-accordion__summary">
-												<span class="sidebar-text sidebar-text-subheading slds-m-top_small">DOCUMENTS</span>
-												<span class="mobile-only slds-avatar slds-avatar_circle slds-avatar_x-small slds-p-around_xx-small slds-m-top_small">
-													<img alt="Down arrow" src="Images\right-arrow.svg" />
-												</span>
-									</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">My Documents</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">Delegate Documents</div>
-								</section>
-							</li>
-							<li class="slds-accordion__list-item">
-								<section class="slds-accordion__section" id="acc4" onclick="expand('acc4')">
-									<div class="slds-accordion__summary">
-												<span class="sidebar-text sidebar-text-subheading slds-m-top_small">TRANSACTIONS</span>
-												<span class="mobile-only slds-avatar slds-avatar_circle slds-avatar_x-small slds-p-around_xx-small slds-m-top_small">
-													<img alt="Down arrow" src="Images\right-arrow.svg" />
-												</span>
-									</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">My Transactions</div>
-								</section>
-							</li>
-							<li class="slds-accordion__list-item">
-								<section class="slds-accordion__section" id="acc5" onclick="expand('acc5')">
-									<div class="slds-accordion__summary">
-												<span class="sidebar-text sidebar-text-subheading slds-m-top_small">DELEGATE</span>
-												<span class="mobile-only slds-avatar slds-avatar_circle slds-avatar_x-small slds-p-around_xx-small slds-m-top_small">
-													<img alt="Down arrow" src="Images\right-arrow.svg" />
-												</span>
-									</div>
-									<div class="slds-accordion__content sidebar-text acc-expand">My Delegate</div>
-								</section>
-							</li>
-						</ul>
+						<fieldset class="slds-nav-vertical">
+							<span class="slds-nav-vertical__item">
+								<label class="slds-nav-vertical__action" for="unique-id-01-summary">
+									<span class="slds-nav-vertical_radio-faux sidebar-text sidebar-text-subheading slds-m-top_small">SUMMARY</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-summary" value="unique-id-01-summary" name="unique-id-example" checked="" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-summary">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">Account Summary</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<label class="slds-nav-vertical__action" for="unique-id-01-investments">
+									<span class="slds-nav-vertical_radio-faux sidebar-text sidebar-text-subheading">INVESTMENTS</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-myinvestments" value="unique-id-01-myinvestments" name="unique-id-example" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-myinvestments">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">My Investments</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-investorlist" value="unique-id-01-investorlist" name="unique-id-example" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-investorlist">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">Investor List</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<label class="slds-nav-vertical__action" for="unique-id-01-documents">
+									<span class="slds-nav-vertical_radio-faux sidebar-text  sidebar-text-subheading">DOCUMENTS</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-mydocuments" value="unique-id-01-mydocuments" name="unique-id-example" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-mydocuments">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">My Document</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-delegatedocuments" value="unique-id-01-delegatedocuments" name="unique-id-example" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-delegatedocuments">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">Delelgate Document</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<label class="slds-nav-vertical__action" for="unique-id-01-transactions">
+									<span class="slds-nav-vertical_radio-faux sidebar-text  sidebar-text-subheading">TRANSACTIONS</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-mytransactions" value="unique-id-01-mytransactions" name="unique-id-example" checked="" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-mytransactions">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">My Transactions</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<label class="slds-nav-vertical__action" for="unique-id-01-delegate">
+									<span class="slds-nav-vertical_radio-faux sidebar-text sidebar-text-subheading">DELEGATE</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item">
+								<input type="radio" id="unique-id-01-mydelegate" value="unique-id-01-mydelegate" name="unique-id-example" checked="" />
+								<label class="slds-nav-vertical__action" for="unique-id-01-mydelegate">
+									<span class="slds-nav-vertical_radio-faux sidebar-text">My Delegate</span>
+								</label>
+							</span>
+							<span class="slds-nav-vertical__item sidebar-text bottom">&#169;2019 All rights reserved</span>
+						</fieldset>
 					</div>
 				</div>
 			</div>
@@ -134,24 +145,24 @@
 		<!-- Body start -->
 		<!--Table Container-->
 		<div class="slds-col slds-large-size_4-of-5">
-			<div class="slds-container_large slds-container_center">
-				<div class="slds-grid slds-wrap">
-					<div class="slds-col slds-size_1-of-1">
-						<div class="desktop-only" id="options">
-							<br/>
-							<div class="slds-grid slds-gutters">
-								<div class="slds-col slds-size_3-of-12 slds-text-heading_medium">
-									<span class="">Investor List</span>
-								</div>
-								<div class="slds-col slds-size_3-of-12">
-									<input type="text" class="slds-input slds-combobox__input search-background" placeholder="Search by Name or Email..."/>
-								</div>
-								<div class="slds-col slds-size_2-of-12">
+		<div class="slds-container_large slds-container_center">
+		<div class="slds-grid slds-wrap">
+			<div class="slds-col slds-size_1-of-1">
+		<div class="desktop-only" id="options">
+			<br/>
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_3-of-12 slds-text-heading_medium">
+						<span class="">Investor List</span>
+					</div>
+					<div class="slds-col slds-size_3-of-12">
+						<input type="text" class="slds-input slds-combobox__input search-background" placeholder="Search by Name or Email..."/>
+					</div>
+					<div class="slds-col slds-size_2-of-12">
 									<select class="slds-select">
 										<option>Both</option>
 									</select>
-								</div>
-								<div class="slds-col slds-size_2-of-12">
+					</div>
+					<div class="slds-col slds-size_2-of-12">
 									<select class="slds-select">
 										<option>All</option>
 										<option>Individual</option>
@@ -160,365 +171,365 @@
 										<option>Joint</option>
 										<option>Entity</option>
 									</select>
-								</div>
-								<div class="slds-col slds-size_1-of-12">
-									<fieldset class="slds-form-element">
-										<div class="slds-form-element__control slds-align_absolute-center">
-											<div class="slds-radio_button-group">
-												<span class="slds-button slds-radio_button">
-													<input type="radio" name="example-unique-name-92" id="example-unique-id-94" value="monday" onclick="changeLayout()"/>
-													<label class="slds-radio_button__label" for="example-unique-id-94">
-														<img class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small" src="Images\box.png"/>
-													</label>
-												</span>
-												<span class="slds-button slds-radio_button">
-													<input type="radio" name="example-unique-name-92" id="example-unique-id-95" value="tuesday" onclick="resetLayout()"/>
-													<label class="slds-radio_button__label" for="example-unique-id-95">
-														<img class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small" src="Images\table.png"/>
-													</label>
-												</span>
-											</div>
+					</div>
+					<div class="slds-col slds-size_1-of-12">
+     				<fieldset class="slds-form-element">
+		<div class="slds-form-element__control slds-align_absolute-center">
+			<div class="slds-radio_button-group">
+				<span class="slds-button slds-radio_button">
+					<input type="radio" name="example-unique-name-92" id="example-unique-id-94" value="monday" onclick="changeLayout()"/>
+					<label class="slds-radio_button__label" for="example-unique-id-94">
+						<img class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small" src="Images\box.png"/>
+					</label>
+				</span>
+				<span class="slds-button slds-radio_button">
+					<input type="radio" name="example-unique-name-92" id="example-unique-id-95" value="tuesday" onclick="resetLayout()"/>
+					<label class="slds-radio_button__label" for="example-unique-id-95">
+						<img class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small" src="Images\table.png"/>
+					</label>
+				</span>
+			</div>
+		</div>
+	</fieldset>	
+					</div>
+					<div class="slds-col slds-size_1-of-12">
+						<button class="slds-button slds-button_neutral slds-p-around_none slds-float_right">
+  	<img src="Images\down-arrow.png" class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small"/>
+  	</button>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="slds-col slds-size_1-of-1">
+		<div class="desktop-only" id="tableheading">
+			<div class="slds-m-top_small slds-p-top_small table-container">
+					<div class="slds-grid slds-wrap slds-p-horizontal_x-large">
+						<div class="slds-col slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+							<span class="font-secondary slds-p-horizontal_x-small">Name</span>
+						</div>
+						<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+							<span class="font-secondary dektop-only slds-p-horizontal_x-small">Total Contributions</span>
+						</div>
+						<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+							<span class="font-secondary dektop-only slds-p-horizontal_xx-small">Total Distribution</span>
+						</div>
+						<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+							<span class="font-secondary">Total Balance</span>
+						</div>
+						<div class="slds-col slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+							<span class="font-secondary">Details</span>
+						</div>
+					</div>
+				</div>
+</div>
+</div>
+	<div class="slds-col slds-size_1-of-1" id="maincontent">
+		<div class="slds-grid slds-wrap">
+			<!-- Card 1 start -->
+					<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic1.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Lacara Jones</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
 										</div>
-									</fieldset>	
-								</div>
-								<div class="slds-col slds-size_1-of-12">
-									<button class="slds-button slds-button_neutral slds-p-around_none slds-float_right">
-										<img src="Images\down-arrow.png" class="slds-avatar slds-avatar_profile-image-large slds-p-around_xx-small"/>
-									</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="slds-col slds-size_1-of-1">
-						<div class="desktop-only" id="tableheading">
-							<div class="slds-m-top_small slds-p-top_small table-container">
-								<div class="slds-grid slds-wrap slds-p-horizontal_x-large">
-									<div class="slds-col slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-										<span class="font-secondary slds-p-horizontal_x-small">Name</span>
+						<!-- Card 1 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic2.jpg" title="Person" />
 									</div>
-									<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-										<span class="font-secondary dektop-only slds-p-horizontal_x-small">Total Contributions</span>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
 									</div>
-									<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-										<span class="font-secondary dektop-only slds-p-horizontal_xx-small">Total Distribution</span>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Iruka Akuchi</span>
 									</div>
-									<div class="slds-col slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-										<span class="font-secondary">Total Balance</span>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
 									</div>
-									<div class="slds-col slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-										<span class="font-secondary">Details</span>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="slds-col slds-size_1-of-1" id="maincontent">
-						<div class="slds-grid slds-wrap">
-							<!-- Card 1 start -->
-							<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-								<div class="slds-grid grid-relative">
-									<div class="slds-col">
-										<div class="slds-grid slds-wrap">
-											<div class="slds-align_absolute-center">
-												<img class="image-section" alt="Headshot" src="Images/Pic1.jpg" title="Person" />
-											</div>
-											<div class="slds-align_absolute-center slds-order_3">
-												<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-											</div>
-											<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-												<span class="font-primary">Lacara Jones</span>
-											</div>
-											<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-												<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-												<span class="font-primary desktop-only">$ 821,213</span>
-											</div>
-											<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-												<span class="font-secondary mobile-only">Total Contributions</span>
-												<span class="font-primary desktop-only">$ 821,213</span>
-											</div>
-											<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-												<span class="font-primary">$ 821,213</span>
-											</div>
-											<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-												<button class="slds-button button_bottom mobile-only">
-													View Details
-												</button>
-												<button class="slds-button desktop-only">
-													<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-												</div>
-											</div>
+						<!-- Card 2 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic3.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Zoe Miller</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
 										</div>
 									</div>
 								</div>
-								<!-- Card 1 end -->
-								<!-- Card 2 start -->
-								<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-									<div class="slds-grid grid-relative">
-										<div class="slds-col">
-											<div class="slds-grid slds-wrap">
-												<div class="slds-align_absolute-center">
-													<img class="image-section" alt="Headshot" src="Images/Pic2.jpg" title="Person" />
-												</div>
-												<div class="slds-align_absolute-center slds-order_3">
-													<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-												</div>
-												<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-													<span class="font-primary">Iruka Akuchi</span>
-												</div>
-												<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-													<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-													<span class="font-primary desktop-only">$ 821,213</span>
-												</div>
-												<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-													<span class="font-secondary mobile-only">Total Contributions</span>
-													<span class="font-primary desktop-only">$ 821,213</span>
-												</div>
-												<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-													<span class="font-primary">$ 821,213</span>
-												</div>
-												<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-													<button class="slds-button button_bottom mobile-only">
-														View Details
-													</button>
-													<button class="slds-button desktop-only">
-														<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-													</div>
-												</div>
-											</div>
+							</div>
+						</div>
+						<!-- Card 2 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic4.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Uesugi Suzuki</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
 										</div>
 									</div>
-									<!-- Card 2 end -->
-									<!-- Card 2 start -->
-									<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-										<div class="slds-grid grid-relative">
-											<div class="slds-col">
-												<div class="slds-grid slds-wrap">
-													<div class="slds-align_absolute-center">
-														<img class="image-section" alt="Headshot" src="Images/Pic3.jpg" title="Person" />
-													</div>
-													<div class="slds-align_absolute-center slds-order_3">
-														<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-													</div>
-													<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-														<span class="font-primary">Zoe Miller</span>
-													</div>
-													<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-														<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-														<span class="font-primary desktop-only">$ 821,213</span>
-													</div>
-													<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-														<span class="font-secondary mobile-only">Total Contributions</span>
-														<span class="font-primary desktop-only">$ 821,213</span>
-													</div>
-													<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-														<span class="font-primary">$ 821,213</span>
-													</div>
-													<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-														<button class="slds-button button_bottom mobile-only">
-															View Details
-														</button>
-														<button class="slds-button desktop-only">
-															<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-														</div>
-													</div>
-												</div>
-											</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card 2 end -->
+						<!-- Card 1 start -->
+					<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic1.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Lacara Jones</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
 										</div>
-										<!-- Card 2 end -->
-										<!-- Card 2 start -->
-										<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-											<div class="slds-grid grid-relative">
-												<div class="slds-col">
-													<div class="slds-grid slds-wrap">
-														<div class="slds-align_absolute-center">
-															<img class="image-section" alt="Headshot" src="Images/Pic4.jpg" title="Person" />
-														</div>
-														<div class="slds-align_absolute-center slds-order_3">
-															<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-														</div>
-														<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-															<span class="font-primary">Uesugi Suzuki</span>
-														</div>
-														<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-															<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-															<span class="font-primary desktop-only">$ 821,213</span>
-														</div>
-														<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-															<span class="font-secondary mobile-only">Total Contributions</span>
-															<span class="font-primary desktop-only">$ 821,213</span>
-														</div>
-														<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-															<span class="font-primary">$ 821,213</span>
-														</div>
-														<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-															<button class="slds-button button_bottom mobile-only">
-																View Details
-															</button>
-															<button class="slds-button desktop-only">
-																<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<!-- Card 2 end -->
-											<!-- Card 1 start -->
-											<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-												<div class="slds-grid grid-relative">
-													<div class="slds-col">
-														<div class="slds-grid slds-wrap">
-															<div class="slds-align_absolute-center">
-																<img class="image-section" alt="Headshot" src="Images/Pic1.jpg" title="Person" />
-															</div>
-															<div class="slds-align_absolute-center slds-order_3">
-																<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-															</div>
-															<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-																<span class="font-primary">Lacara Jones</span>
-															</div>
-															<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-																<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-																<span class="font-primary desktop-only">$ 821,213</span>
-															</div>
-															<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																<span class="font-secondary mobile-only">Total Contributions</span>
-																<span class="font-primary desktop-only">$ 821,213</span>
-															</div>
-															<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																<span class="font-primary">$ 821,213</span>
-															</div>
-															<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-																<button class="slds-button button_bottom mobile-only">
-																	View Details
-																</button>
-																<button class="slds-button desktop-only">
-																	<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- Card 1 end -->
-												<!-- Card 2 start -->
-												<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-													<div class="slds-grid grid-relative">
-														<div class="slds-col">
-															<div class="slds-grid slds-wrap">
-																<div class="slds-align_absolute-center">
-																	<img class="image-section" alt="Headshot" src="Images/Pic2.jpg" title="Person" />
-																</div>
-																<div class="slds-align_absolute-center slds-order_3">
-																	<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-																</div>
-																<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-																	<span class="font-primary">Rita Leite</span>
-																</div>
-																<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-																	<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-																	<span class="font-primary desktop-only">$ 821,213</span>
-																</div>
-																<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																	<span class="font-secondary mobile-only">Total Contributions</span>
-																	<span class="font-primary desktop-only">$ 821,213</span>
-																</div>
-																<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																	<span class="font-primary">$ 821,213</span>
-																</div>
-																<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-																	<button class="slds-button button_bottom mobile-only">
-																		View Details
-																	</button>
-																	<button class="slds-button desktop-only">
-																		<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- Card 2 end -->
-													<!-- Card 2 start -->
-													<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-														<div class="slds-grid grid-relative">
-															<div class="slds-col">
-																<div class="slds-grid slds-wrap">
-																	<div class="slds-align_absolute-center">
-																		<img class="image-section" alt="Headshot" src="Images/Pic3.jpg" title="Person" />
-																	</div>
-																	<div class="slds-align_absolute-center slds-order_3">
-																		<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-																	</div>
-																	<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-																		<span class="font-primary">Seri Anand</span>
-																	</div>
-																	<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-																		<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-																		<span class="font-primary desktop-only">$ 821,213</span>
-																	</div>
-																	<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																		<span class="font-secondary mobile-only">Total Contributions</span>
-																		<span class="font-primary desktop-only">$ 821,213</span>
-																	</div>
-																	<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																		<span class="font-primary">$ 821,213</span>
-																	</div>
-																	<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-																		<button class="slds-button button_bottom mobile-only">
-																			View Details
-																		</button>
-																		<button class="slds-button desktop-only">
-																			<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<!-- Card 2 end -->
-														<!-- Card 2 start -->
-														<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
-															<div class="slds-grid grid-relative">
-																<div class="slds-col">
-																	<div class="slds-grid slds-wrap">
-																		<div class="slds-align_absolute-center">
-																			<img class="image-section" alt="Headshot" src="Images/Pic4.jpg" title="Person" />
-																		</div>
-																		<div class="slds-align_absolute-center slds-order_3">
-																			<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
-																		</div>
-																		<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
-																			<span class="font-primary">Rita Leite</span>
-																		</div>
-																		<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
-																			<span class="font-secondary mobile-only">abcdef@xyz.com</span>
-																			<span class="font-primary desktop-only">$ 821,213</span>
-																		</div>
-																		<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																			<span class="font-secondary mobile-only">Total Contributions</span>
-																			<span class="font-primary desktop-only">$ 821,213</span>
-																		</div>
-																		<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
-																			<span class="font-primary">$ 821,213</span>
-																		</div>
-																		<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
-																			<button class="slds-button button_bottom mobile-only">
-																				View Details
-																			</button>
-																			<button class="slds-button desktop-only">
-																				<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<!-- Card 2 end -->
-														</div>
-													</div>
-												</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card 1 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic2.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Rita Leite</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card 2 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic3.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Seri Anand</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card 2 end -->
+						<!-- Card 2 start -->
+						<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+						<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src="Images/Pic4.jpg" title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">Rita Leite</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">abcdef@xyz.com</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card 2 end -->
+					</div>
+	</div>
+</div>
 
-												<!--Table Container End-->
-											</div>
-										</div>
-									</div>
-									<!--Main Grid End-->
-									<!-- Body end -->
-								</body>
-								</html>
+		<!--Table Container End-->
+				</div>
+				</div>
+			</div>
+				<!--Main Grid End-->
+				<!-- Body end -->
+			</body>
+			</html>
