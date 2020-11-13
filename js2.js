@@ -1,9 +1,61 @@
-// var xhr = new XMLHttpRequest();
-// xhr.open("GET", "https://reqres.in/api/products/3", true);
-// xhr.onload = function(){
-//     console.log(xhr.responseText);
-// };
-// xhr.send();
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://reqres.in/api/users?page=2", true);
+xhr.responseType = 'json';
+xhr.send();
+let data;
+xhr.onload = function(){
+    //console.log(xhr.response.data);
+    if(xhr.status == 200)
+    {
+    	data = xhr.response.data;
+    	// console.log(xhr.response.data);
+    	adddata();
+    }
+
+};
+
+var adddata = function(){
+	let x = "";
+	for(let r of data)
+	{
+		x+= `<div class="slds-col slds-medium-size_1-of-3 slds-large-size_1-of-1">
+				<div class="slds-grid grid-relative">
+							<div class="slds-col">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-align_absolute-center">
+										<img class="image-section" alt="Headshot" src = ${r.avatar} title="Person" />
+									</div>
+									<div class="slds-align_absolute-center slds-order_3">
+										<img class ="image-3dot" src="Images/threedots.png" alt="options"/>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_4-of-12 padding-content-left">
+										<span class="font-primary">${r.first_name}</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-m-bottom_medium slds-large-size_2-of-12 remove-margin_bottom padding-content-left">
+										<span class="font-secondary mobile-only">${r.email}</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-secondary mobile-only">Total Contributions</span>
+										<span class="font-primary desktop-only">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_2-of-12 padding-content-left">
+										<span class="font-primary">$ 821,213</span>
+									</div>
+									<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-12 slds-align_absolute-center padding-content-left">
+										<button class="slds-button button_bottom mobile-only">
+											View Details
+										</button>
+										<button class="slds-button desktop-only">
+											<img class ="image-3dot" src="Images/view.png" alt="options" />View</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>`;
+	}
+	document.getElementById('contentgrid').innerHTML = x;
+ }
 window.addEventListener('resize', function () { 
     "use strict";
     window.location.reload();
